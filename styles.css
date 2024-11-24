@@ -168,7 +168,7 @@ h3 {
 * {box-sizing:border-box}
 
 .slideshow-container {
-  max-width: 650px;
+  max-width: 1000px;
   position: relative;
   margin: auto;
 }
