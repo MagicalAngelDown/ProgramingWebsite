@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>About Me</title>
+            <link rel="stylesheet" href="Interactive_about.css" />
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+            <script defer src="jquery_script.js"></script>
+        </head>
+    <body>
+        <header class="site-header">
+
+        </header>
+            
+
+        <main class="container">
+            <section id="accordion" class="card">
+                <h2>About the Lilly Family</h2>
+                <div class="accordion">
+                    <h3 class="acc-header" tabindex="0" aria-controls="acc-panel-1" aria-expanded="true">Who are apart of the Lilly Family?</h3>
+                    <div id="acc-panel-1" class="acc-panel" role="region" aria-labelledby="acc-header-1">
+                        <p>There is me, my husband Paul, our son Michael, our two dogs: Artemis and Zephyr, and our cat Lola.</p>
+                    </div>
+
+                    <h3 class="acc-header" tabindex="0" aria-controls="acc-panel-2" aria-expanded="false">Fun Facts about the Lilly Family</h3>
+                    <div id="acc-panel-2" class="acc-panel" role="region" aria-labelledby="acc-header-2">
+                        <ul>
+                            <li>We own a gaming Server with 2000 Members.</li>
+                            <li>Mine and My husbands colors are Green and Purple. Hence why they are in our Server! Also those colors were apart of our wedding!</li>
+                            <li>Michael was a premie baby, born at 34 weeks and 2 days gestation. He was in the NICU for a month.</li>
+                            <li>All of our animals are well trained, even Lola. When Lola wants to mind at least.</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="acc-header" tabindex="0" aria-controls="acc-panel-3" aria-expanded="false">What does Paul and Brooke have planned for the future?</h3>
+                    <div id="acc-panel-3" class="acc-panel" role="region" aria-labelledby="acc-header-3">
+                        <p>Well, Paul is in the Air Force right now. Although when he gets out he will be doing computer programming just like me. </br></p>
+                        <p>I want to be the web developer,and he will be doing the ticketing system for companies. I actually have already created three websites for my own personal use before this class.</br></p>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Tabs -->
+            <section id="tabs" class="card">
+                <div class="tabs" role="tablist" aria-label="Sample tabs">
+                    <button class="tab active" role="tab" aria-selected="true" aria-controls="tab-panel-1" id="tab-1">Brooke's Fun Facts</button>
+                    <button class="tab" role="tab" aria-selected="false" aria-controls="tab-panel-2" id="tab-2">Paul's Fun Facts</button>
+                    <button class="tab" role="tab" aria-selected="false" aria-controls="tab-panel-3" id="tab-3">Michael's Fun Facts</button>
+                </div>
+
+                <div class="tab-panels">
+                        <div id="tab-panel-1" class="tab-panel" role="tabpanel" aria-labelledby="tab-1">
+                        <p>&#9829 Loves all fruits</p>
+                        <p>&#9829 Favorite Games are: Dead by Daylight, Minecraft, Sims 4, and Genshin Impact</p>
+                        <p>&#9829 Streams on Twitch and Youtube. (Haven't been lately due to Michael)</p>
+                        <p>&#9829 Before Computer Programming, was one semester off from becoming a nurse.</p>
+                    </div>
+
+                    <div id="tab-panel-2" class="tab-panel" role="tabpanel" aria-labelledby="tab-2" hidden>
+                        <p>&#9813 Loves a Medium rare steak</p>
+                        <p>&#9813 Is the main cook of the household.</p>
+                        <p>&#9813 Favorite games are: League of Legends, Marvel Rivals, Garry's Mod</p>
+                        <p>&#9813 Has made over 6 discord Communities, and has coded over 10 servers for Garry's Mod servers</p>
+                    </div>
+
+                    <div id="tab-panel-3" class="tab-panel" role="tabpanel" aria-labelledby="tab-3" hidden>
+                        <p>&#9775 Loves Mom and Dad</p>
+                        <p>&#9775 Made Mom not like pizza, burgers and pork while mom was pregnant.</p>
+                        <p>&#9775 Survived and graduated the NICU</p>
+                        <p>&#9775 Was 5lbs and 10 oz born, which is big for a premie baby!</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Slideshow -->
+            <section id="slideshow" class="card">
+                <h2>Picture Slideshow</h2>
+                <div class="slideshow" aria-roledescription="carousel" aria-label="Class gallery">
+                    <div class="slides" role="group">
+                        <img src="img/Michael_Mom.jpg" alt="Me and my son Michael at the Mexican Restaurant for the first time" class="slide active" />
+                        <img src="img/cuddlePiles.jpg" alt="The Whole Lilly family snuggling" class="slide" />
+                        <img src="img/milkDrunk.jpg" alt="Michael being Milk Drunk" class="slide" />
+                        <img src="img/twoBottles.jpg" alt="His first note from his NICU Nurse. " class="slide" />
+                        <img src="img/blackmailPhoto2.jpg" alt="This photo of a photo for blackmail in the future" class="slide" />
+                    </div>
+
+                    <button class="nav prev" aria-label="Previous slide" type="button">&#10094;</button>
+                    <button class="nav next" aria-label="Next slide" type="button">&#10095;</button>
+                    <div class="dots" role="tablist" aria-label="Slide navigation">
+                        <button class="dot active" aria-label="Go to slide 1" role="tab" aria-selected="true"></button>
+                        <button class="dot" aria-label="Go to slide 2" role="tab" aria-selected="false"></button>
+                        <button class="dot" aria-label="Go to slide 3" role="tab" aria-selected="false"></button>
+                        <button class="dot" aria-label="Go to slide 4" role="tab" aria-selected="false"></button>
+                        <button class="dot" aria-label="Go to slide 5" role="tab" aria-selected="false"></button>
+                    </div>
+                </div>
+                <p class="hint">Tip: Hover over the slideshow to pause autoplay. Also click the dots to switch to different slides!</p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <small> ITEC 3280 – Assignment 5 • jQuery Intro</small>
+        </footer>
+    </body>
+</html>
